@@ -1,0 +1,97 @@
+
+.chat-info{
+    
+    height: 10vh;
+    /* background-color: lawngreen; */
+    border-bottom: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+ 
+
+}
+
+.cm{
+    flex: 1;
+    /* background-color: cornsilk; */
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.info-btn{
+    padding: 0px 0px;
+    display: flex;
+    border: none;
+    background-color: inherit;
+}
+
+.info-btn:hover{
+    cursor: pointer;
+}
+
+.chat-cont{
+    flex: 1;
+    /* background-color: lightslategray; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.details{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.mute{
+    height: 10vh;
+    /* background-color: lightblue; */
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.members{
+    height: 25vh;
+    border-bottom: 1px solid lightgrey;
+    /* background-color: lightblue; */
+}
+
+.p-mem{
+    font-size: large;
+    font-weight: 600;
+    margin-left: 20px;   
+}
+
+.manu{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    
+}
+
+.mnu{
+    margin-left: 10px;
+}
+
+.actions{
+    height: 25vh;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: lightpink; */
+    font-weight: 600;
+    color: red;
+    
+}
+
+.a-margin{
+    margin-left: 20px;
+}

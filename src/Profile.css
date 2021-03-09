@@ -1,0 +1,161 @@
+.profile-cont{
+    height: max-content;
+    /* background-color: khaki; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-div{
+    height: 100%;
+    width: 70%;
+    /* background-color: lemonchiffon; */
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-profile{
+    height: 40vh;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+
+.up-avatar{
+    width: 30%;
+    height: 100%;
+    /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-info{
+    width: 40%;
+    height: 100%;
+    /* background-color: lightslategrey; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.up-nes{
+    display: flex;
+    align-items: center;
+    /* background-color: lightyellow; */
+    justify-content: space-between;
+}
+
+.up-pn{
+    font-size: xx-large;
+    color: rgb(146, 145, 145);
+}
+
+.ep-btn{
+    border: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: lightgray;
+    font-size: small;
+}
+
+.settings-btn{
+    padding: 0px;
+    display: flex;
+    border: none;
+    background-color: inherit;
+}
+
+.settings-btn:hover{
+    cursor: pointer;
+}
+
+.up-pff{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.up-pp{
+    display: flex;
+}
+
+.up-num{
+    font-weight: bold;
+}
+
+.up-name{
+    font-weight: bold;
+    color: rgb(104, 102, 102);
+}
+
+.central-profile{
+    height: 10vh;
+    /* background-color: lightblue; */
+    display: flex;
+    border-top: 1px solid gray ;
+}
+
+.cp-left{
+    width: 25%;
+    /* background-color: lightcoral; */
+}
+
+.cp-right{
+    width: 45%;
+    /* background-color: lightgreen; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cp-border{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+    color: dimgray;
+    text-decoration: none;
+}
+
+.cp-border:hover{
+    cursor: pointer;
+    
+}
+
+.lower-profile{
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.igtv{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}
+
+.saved{
+    height: 40vh;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.tagged{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+}

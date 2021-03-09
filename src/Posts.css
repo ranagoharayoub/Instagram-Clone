@@ -1,0 +1,13 @@
+.lp-flex{
+    height: 100%;
+    width: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.lp-pic{
+    height: 100%;
+    width: 30%;
+    background-color:dimgray;
+}

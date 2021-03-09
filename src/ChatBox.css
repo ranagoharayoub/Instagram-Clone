@@ -1,0 +1,138 @@
+.chat-window{
+    width: 45vw;
+    height: 100%;
+    /* background-color: lightsteelblue; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.chat{
+    width: 45vw;
+    height: 100%;
+    /* background-color: lightsteelblue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-info{
+    
+    height: 10vh;
+    /* background-color: lawngreen; */
+    border-bottom: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+ 
+
+}
+
+.cm{
+    flex: 1;
+    /* background-color: cornsilk; */
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cpls{
+    display: flex;
+    align-items: center;
+}
+
+.ls{
+    margin-left: 10px;
+}
+
+.lsn{
+    font-size: small;
+    font-weight: bold;
+}
+
+.la{
+    font-size: small;
+    margin-top: -10px;
+    color: rgb(150, 149, 149);
+}
+
+.info-btn{
+    padding: 0px 0px;
+    display: flex;
+    border: none;
+    background-color: inherit;
+}
+
+.info-btn:hover{
+    cursor: pointer;
+}
+
+.chat-cont{
+    flex: 1;
+    /* background-color: lightslategray; */
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-box{
+    margin: 0px 15px;
+    flex: 1;
+    /* background-color: mediumseagreen; */
+}
+
+.msg-input{
+    height: 10vh;
+    /* background-color: lightpink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sent-text{
+    /* background-color: lightcoral; */
+    height: max-content;
+    display: flex;
+    float: right;
+    width: 200px;
+    margin: 10px 0px;
+    justify-content: flex-end;
+    align-items:center;
+    
+}
+
+.sent-text-area{
+    height: max-content;
+    width: max-content;
+    background-color: lightskyblue;
+    border-radius: 20px;
+}
+
+
+
+.mi{
+    height: 35px;
+    width: 575px;
+    /* background-color: white; */
+    border-radius: 20px;
+    border: 0.5px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-form{
+    display: flex;
+}
+
+.inputfield{
+    height: 25px;
+    width: 450px;
+    border: none;
+}
+
+.send-msg{
+    border: none;
+    font-weight: bold;
+    color: rgb(5, 178, 209);
+    background-color: white;
+}
+

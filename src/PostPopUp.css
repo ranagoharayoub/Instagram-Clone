@@ -1,0 +1,32 @@
+.pp-cont{
+    height: 35.5vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.pp-div{
+    flex: 1;
+    /* height: 8.875vh; */
+    /* background-color: chartreuse; */
+    border-bottom: 1px solid lightgray;
+}
+
+.pp-link{
+    text-decoration: none;
+    text-align: center;
+    color: inherit;   
+}
+
+.pp-report{
+    color: red;
+    font-weight: bold;
+}
+
+.pp-unfollow{
+    color: red;
+    font-weight: bold;
+}

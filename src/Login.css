@@ -1,0 +1,179 @@
+.body{
+    /* background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);  */
+    background-color: whitesmoke;
+    height: 120vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.pics{
+    margin-top: 27px;
+    height: 100vh;
+    width: 400px;
+    background-image: url('./login.png');
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    
+}
+
+.pics>img{
+    margin: 105.5px 130px;
+}
+
+.login-contents{
+    margin-top: 35px;
+    height: 100vh;
+    width: 350px;
+    /* background-color: salmon; */
+    /* margin-right: -30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.uper-container{
+    height: fit-content;
+    /* width: 250px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    /* align-items: center; */
+    padding: 0px 35px;
+    border: 0.5px solid rgb(224, 223, 223);
+}
+
+
+.logo{
+    font-size: 50px;
+    font-weight: 550;
+    font-family: 'Grand Hotel', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.input-fields>input{
+    height: 30px;
+    /* width: 100%; */
+    margin-bottom: 5px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(209, 209, 209);
+
+}
+
+.input-fields>input:focus{
+    border: none;
+    outline: none;
+}
+
+.input-fields>button{
+    margin-top: 15px;
+    height: 30px;
+    /* width: 100%; */
+    /* background-color: #8ec3eb; */
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#login{
+    background-color: #2a6592;
+}
+
+#b-login{
+    background-color: #8ec3eb;
+}
+
+hr{
+    margin: 20px 0px;
+    width:100%;
+    text-align:left;
+
+}
+
+.fb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(117, 117, 117);
+}
+
+.fb>img{
+    margin-right: 10px;
+    height: 17px;
+    width: auto;
+}
+
+.forget-pass{
+    text-align: center;
+    font-size: 12px;
+}
+
+.dont-account{
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: 0.5px solid rgb(224, 223, 223);
+
+}
+
+.signup{
+    margin-left: 5px;
+    color: rgb(10, 124, 124);
+    font-weight: bold;
+
+}
+
+.app{
+    /* background-color: wheat; */
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid lightgray; */
+    
+    
+}
+
+.app> p{
+    font-size: 13px;
+}
+
+
+.badge{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: lightgreen; */
+}
+
+/* .badge>img{
+    height: 50px;
+} */
+
+.playstore{
+    /* background-color: lightsalmon; */
+    height: 62px;
+}
+
+.apple{
+    /* background-color: lightslategray; */
+    height: 44px;
+}

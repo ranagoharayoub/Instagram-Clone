@@ -1,0 +1,248 @@
+.home-page{
+    height: 200vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.center{
+    margin-top: 40px;
+    display: flex;
+    width: 70%;
+}
+
+.timeline{
+    /* background-color: black; */
+    flex: 0.65;
+}
+
+.story{
+    height: 15vh;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.avatar{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    height: 15vh;
+    /* align-items: center; */
+    justify-content: center;
+    place-items: center;
+}
+
+.avatar>p{
+    /* background-color: beige; */
+    margin-top: 6px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.newsfeed{
+    margin-top: 30px;
+    height: 70vh;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-name{
+    height: 10vh;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-title{
+    display: flex;
+    align-items: center;
+    width: 7vw;
+    /* background-color: burlywood; */
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.post-title>p{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.post-action{
+    margin-right: 15px;
+    border: none;
+    background-color: inherit;
+}
+
+.post-action:hover{
+    cursor: pointer;
+}
+
+.post-div{
+    flex: 1;
+    background-color: white;
+    border: 0.5px solid lightgray;
+    display: flex;
+}
+
+.post-cont{
+    flex: 1;
+    /* background-color: chocolate; */
+}
+
+.nf-img{
+    height: 100%;
+    width: 100%;
+}
+
+.suggestion{
+    /* background-color: aqua; */
+    flex: 0.35;
+    height: 60vh;
+    display: flex;
+}
+
+.suggestion-cont{
+    flex: 1;
+    margin-left:20px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info{
+    height: 15vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+}
+
+.user-avatar{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    /* background-color: burlywood; */
+    justify-content: space-between;
+    
+}
+
+.user-name{
+    margin-left: 10px;
+}
+
+.id-name{
+    font-size: small;
+    font-weight: bold;
+    color: rgb(56, 55, 55);
+
+}
+
+.profile-name{
+    margin-top: -10px;
+    font-size: small;
+    color: rgb(83, 83, 83);
+}
+
+.switch{
+    font-size: small;
+    font-weight: 500;
+    color: rgb(56, 185, 194);
+    border: none;
+    padding: 0%;
+    background-color: inherit;
+}
+
+.switch:hover{
+    cursor: pointer;
+}
+
+.p-sug{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sfu{
+    font-size: small;
+    /* font-weight: bold; */
+    color: rgb(83, 83, 83);
+}
+
+.see-all{
+    font-size: small;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+}
+
+.see-all:hover{
+    cursor: pointer;
+}
+
+.sp{
+    flex: 1;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.su{
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sui{
+    /* background-color: lightsalmon; */
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.sun{
+    font-size: small;
+    font-weight: bold;
+    color: rgb(56, 55, 55);
+}
+
+.nti{
+    font-size: small;
+    margin-top: -15px;
+
+}
+
+.follow{
+    font-size: small;
+    font-weight: bold;
+    font-size: small;
+    font-weight: 500;
+    color: rgb(56, 185, 194);
+}
+
+.follow:hover{
+    cursor: pointer;
+}
