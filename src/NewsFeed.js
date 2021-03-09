@@ -11,15 +11,6 @@ function NewsFeed(props) {
     const [loading, setloading] = useState(null)
     const [newsfeed, setnewsfeed] = useState([])
 
-    // const baseurl = 'https://pixabay.com/api/'
-    // const token = '20038195-2ca1800555f8137847ef0eba6'
-
-    // const authaxios = axios.create({
-    //   baseURL:baseurl,
-    //   headers:{
-    //     'Authorization': `Bearer ${token}`
-    //   }
-    // })
 
     const fetchuser = async () =>{
 
