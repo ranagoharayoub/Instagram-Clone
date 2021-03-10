@@ -12,11 +12,11 @@ import ChatBox from './ChatBox'
 import axios from 'axios'
 Modal.setAppElement('#root')
 
-function Inbox() {
+function Inbox({width}) {
 
-
-    const [state, setstate] = useState(false)
     
+    const [state, setstate] = useState(false)
+    const [chatclick, setchatclick] = useState(false)
     const [open, setopen] = useState(false)
     const [switchaccount, setswitchaccount] = useState(false)
 
@@ -33,7 +33,10 @@ function Inbox() {
         setswitchaccount(false)
     }
 
-    console.log(open)
+    const mobilechat = () =>{
+        setchatclick(true)
+        setstate(true)
+    }
 
 
     const [chat, setchat] = useState([])
@@ -119,8 +122,8 @@ function Inbox() {
                 <SwitchPopUp alter={clickhandlertwo}></SwitchPopUp>
             </Modal>
             <div className='inbox-container'>
-                
-                <div className='right-cont'>
+
+                <div className={chatclick===true? 'rightmob-cont': 'right-cont' }>
                     <div className='name-cont'>
                         <div className='name-arrow'>
                                 <p>ranagohar1163</p>
@@ -139,10 +142,8 @@ function Inbox() {
                     <div>
                     {
                         loading!==null?
-                        <Link className='id' to={`/inbox/${chat.name.first}`}onClick={() => setstate(true)}>
+                        <Link className='id' to={`/inbox/${chat.name.first}`} onClick={ width <400 ? mobilechat: () => setstate(true)}>
                             <div className='chat-box'>
-                                
-                                    
                                     <div className='ic'>
                                         <div>
                                             <Avatar src={chat.picture.large}></Avatar>
@@ -154,23 +155,11 @@ function Inbox() {
                                     </div>                               
                             </div>
                         </Link>
+                        
                         :
                         <div>Loading</div> 
+                        
                     }
-
-                        <Link className='id' to='/inbox/2' onClick={() => setstate(true)}>
-                            <div className='chat-box'>
-                                <div className='ic'>
-                                    <div>
-                                        <Avatar></Avatar>
-                                    </div>
-                                    <div className='ic-name'>
-                                        <p className='cn'>Name-2</p>
-                                        <p className='lastmsg'>Last msg</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
                      </div>
                     </div>
                 <div className='left-cont'>
@@ -178,17 +167,15 @@ function Inbox() {
                     {
                         state===false?
                         <div className='wcw'>
-                        <Telegram color='primary' style={{ fontSize: 100 }}></Telegram>
-                        <p>Your Messages</p>
-                        <p>Send private photos and messages to a friend or group.</p>
-                        {/* <Link to='/inbox/new' className='btn'> */}
+                            <Telegram color='primary' style={{ fontSize: 100 }}></Telegram>
+                            <p>Your Messages</p>
+                            <p>Send private photos and messages to a friend or group.</p>
                             <button className='btn' onClick={() => setopen(true)}>Send Message</button>
-                        {/* </Link> */}
-                    </div>
+                        </div>
                     :
-                    <div>
-                        <ChatBox img = {chat.picture.large}></ChatBox>
-                    </div>
+                        <div>
+                            <ChatBox img = {chat.picture.large}></ChatBox>
+                        </div>
                     }
                 </div>
             </div>

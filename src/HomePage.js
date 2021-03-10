@@ -14,16 +14,23 @@ import {useStateValue} from './UserContext'
 Modal.setAppElement('#root')
 
 
-function HomePage() {
+function HomePage({width}) {
   
     const [post, setpost] = useState(false)
     const [switchaccount, setswitchaccount] = useState(false)
     const[{user, name}]=useStateValue()
+    
 
   useEffect(() => {
     document.title= 'Instagram'
+    
   }, [])
+  let rows = []
 
+  for (let i = 0; width > 400? i < 7 : i< 4  ; i++) {
+    rows.push(<Status></Status>)
+  }
+  
   const clickhandler = () =>{
     setpost(true)
     setswitchaccount(true)
@@ -51,6 +58,8 @@ function HomePage() {
         },
       }));
       const classes = useStyles(); 
+
+   
 
     return (
         <div className='home-page'>
@@ -96,25 +105,7 @@ function HomePage() {
             <div className='center'>
                 <div className='timeline'>
                     <div className='story'>
-                        <div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div>
-                        <div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div>
-                        <div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div><div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div><div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div>
-                        <div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div>
-                        <div className='avatar'>
-                          <Status size = {classes.large}></Status>
-                        </div>
+                         {rows}
                     </div>
                     <div className='newsfeed'>
                         <NewsFeed open = {() => setpost(true)} ></NewsFeed>

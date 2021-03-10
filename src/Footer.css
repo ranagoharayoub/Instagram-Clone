@@ -1,20 +1,23 @@
 .footer-body{
     height: 8.5vh;
     width: auto;
-    /* background-color: aqua; */
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid lightgrey;
 }
 
+
 .footer-container{
-    /* background-color: cornflowerblue; */
     display: flex;
     width: 70%;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.camera{
+    display: none;
 }
 
 .name{
@@ -64,4 +67,36 @@
 
 .fp-btn:hover{
     cursor: pointer;
+}
+
+
+
+@media (max-width: 400px){
+    .footer-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    .footer-icons{
+        display: flex;
+        align-items: center;
+        /* background-color: lightblue; */
+        width: 8%;
+        justify-content: center;
+        
+    }
+
+    .camera{
+        display: flex;
+    }
+
+    .home-icon, .explore-icon, .news-icon, .fp-btn{
+        display: none;
+    }
+
+    .fs{
+        display: none;
+    }
 }

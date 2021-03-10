@@ -7,9 +7,18 @@ import Inbox from './Inbox';
 import Profile from './Profile';
 import Explore from './Explore';
 import {useStateValue} from './UserContext'
+import { useEffect, useState } from 'react';
 
 
 function App() {
+  const [width, setwidth] = useState(null)
+
+  useEffect(() => {
+    const screen = () =>{
+      setwidth(window.innerWidth)
+    }
+    window.addEventListener('resize', screen)
+  }, [])
 
   const [{user}] = useStateValue()
 
@@ -24,9 +33,9 @@ function App() {
           <Router>
             <Footer ></Footer>
             <Switch>
-              <Route path='/' exact component={HomePage} />
+              <Route path='/' exact render={(props) => <HomePage {...props} width={width}></HomePage>} />
               <Route path='/explore' component={Explore} />
-              <Route path='/inbox/:chatid' component={Inbox}></Route>
+              <Route path='/inbox/:chatid' render={(props) =><Inbox {...props} width={width} ></Inbox>}></Route>
               <Route path='/username/:profile' component={Profile}></Route>
             </Switch>
           </Router>

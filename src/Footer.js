@@ -3,7 +3,7 @@ import './Footer.css'
 import '@material-ui/core'
 import '@material-ui/icons'
 import { Avatar } from '@material-ui/core'
-import { ExploreOutlined, FavoriteBorderOutlined, Home, Telegram} from '@material-ui/icons'
+import { CameraAlt, ExploreOutlined, FavoriteBorderOutlined, Home, Telegram} from '@material-ui/icons'
 import { makeStyles } from '@material-ui/core/styles';
 import {Link} from 'react-router-dom'
 import DropDown from './DropDown'
@@ -69,21 +69,24 @@ function Footer({userout}) {
                   <DropDown logout={userout} bool={clickhandler}></DropDown>
             </Modal>
             <div className='footer-container'>
+                <div className='camera'>
+                  <CameraAlt></CameraAlt>
+                </div>
                 <Link className='name' to='/'>
                   <div className='name'>Instagram</div>
                 </Link>
-                <input className='fs' type='text' placeholder='&#xF002;Search'  ></input>
+                <input className='fs' type='text' placeholder='Search here....' ></input>
                 <div className='footer-icons'>
-                  <Link to='/'>
+                  <Link to='/' className='home-icon' >
                     <Home ></Home>
                   </Link>
-                  <Link to='/inbox/chat'>
+                  <Link to='/inbox/chat' className='tele-icon'>
                     <Telegram ></Telegram>
                   </Link>  
-                  <Link to='/explore'>
+                  <Link to='/explore' className='explore-icon' >
                     <ExploreOutlined ></ExploreOutlined>
                   </Link>  
-                  <Link to='/newslist'>
+                  <Link to='/newslist' className='news-icon'>
                     <FavoriteBorderOutlined ></FavoriteBorderOutlined>
                   </Link>
                   <button className='fp-btn' onClick={() => setstate(true)}>
