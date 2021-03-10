@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 
 
 function App() {
-  const [width, setwidth] = useState(null)
+  const [width, setwidth] = useState(window.innerWidth)
 
   useEffect(() => {
     const screen = () =>{
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
       {
         !user?
-          <Login ></Login>
+          <Login width={width} ></Login>
         :
         <>
           <Router>

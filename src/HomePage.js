@@ -15,7 +15,7 @@ Modal.setAppElement('#root')
 
 
 function HomePage({width}) {
-  
+    console.log(width)
     const [post, setpost] = useState(false)
     const [switchaccount, setswitchaccount] = useState(false)
     const[{user, name}]=useStateValue()

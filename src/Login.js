@@ -3,7 +3,7 @@ import './Login.css'
 import {useStateValue} from './UserContext'
 import {actiontype} from './Reducer'
 
-function Login() {
+function Login(width) {
     const initialcount = 1
     const [count, setcount] = useState(initialcount)
     const [username, setusername] = useState('')
@@ -17,9 +17,8 @@ function Login() {
             name: name
         })
     }
-
-    // let i=0
-
+    console.log(width)
+    
     const userid = () =>{
         setusername(username)
     }
