@@ -266,4 +266,9 @@
         height: 60vh;
         display: none;
     }
+
+    .newsfeed{
+        height: 50vh;
+    }
+
 }

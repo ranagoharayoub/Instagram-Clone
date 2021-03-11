@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Inbox.css'
 import '@material-ui/core'
 import '@material-ui/icons'
-import {  ExpandMore, RateReview, Telegram } from '@material-ui/icons'
+import {  ArrowBackIos, ExpandMore, RateReview, Telegram } from '@material-ui/icons'
 import { Avatar } from '@material-ui/core'
 import {Link} from 'react-router-dom'
 import PopUp from './PopUp'
@@ -122,9 +122,11 @@ function Inbox({width}) {
                 <SwitchPopUp alter={clickhandlertwo}></SwitchPopUp>
             </Modal>
             <div className='inbox-container'>
-
                 <div className={chatclick===true? 'rightmob-cont': 'right-cont' }>
                     <div className='name-cont'>
+                        <Link to='/' className='arrow-back'>
+                            <ArrowBackIos></ArrowBackIos>
+                        </Link>
                         <div className='name-arrow'>
                                 <p>ranagohar1163</p>
                                 <div>
@@ -163,7 +165,7 @@ function Inbox({width}) {
                      </div>
                     </div>
                 <div className='left-cont'>
-                    
+                    
                     {
                         state===false?
                         <div className='wcw'>

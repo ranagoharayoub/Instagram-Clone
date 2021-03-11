@@ -189,4 +189,8 @@ hr{
         background-repeat: no-repeat;
         margin-right: 20px;   
     }
+
+    .login-contents{
+        margin-top: 0px;
+    }
 }

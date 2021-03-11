@@ -1,7 +1,7 @@
 .inbox{
     height: 91.5vh;
     width: auto;
-    background-color: whitesmoke;
+    /* background-color: slateblue; */
     display: flex;
     justify-content: center;
 }
@@ -133,10 +133,23 @@
     cursor: pointer;
 }
 
+.arrow-back{
+    display: none;
+}
 
 @media (max-width: 400px){
+
+    .inbox{
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: slateblue;
+        display: flex;
+        justify-content: center;
+    }
     .inbox-container{
-        margin-top: 3vh;
+        margin-top: 0vh;
         height: 85vh;
         background-color: white;
         width: 100%;
@@ -157,11 +170,21 @@
         display: flex;
         flex-direction: column;
         /* background-color: lightblue; */
-        border-right: 0.5px solid lightgrey;
+        border-right: 0px solid lightgrey;
     }
 
     .rightmob-cont{
         display: none;
     }
-
+    
+    .arrow-back{
+        display: flex;
+        border: none;
+        margin-left: 10px;
+    }
+    .new-chat{
+        margin-right: 0px;
+        display: flex;
+        /* background-color: chartreuse; */
+    }
 }
