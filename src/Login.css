@@ -182,15 +182,11 @@ hr{
 @media (max-width: 400px){
     .pics{
         display: none;
-        margin-top: 27px;
-        height: 100vh;
-        width: 400px;
-        background-image: url('./login.png');
-        background-repeat: no-repeat;
-        margin-right: 20px;   
     }
 
     .login-contents{
-        margin-top: 0px;
+        width: 100vw;
+        margin: 0px;
+        margin-top: 10vh;
     }
 }

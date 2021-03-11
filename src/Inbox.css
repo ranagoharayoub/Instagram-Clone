@@ -106,9 +106,7 @@
 .left-cont{
     flex: 1;
     display: flex;
-    /* justify-content: center; */
-    /* background-color: lightpink */
-    /* border: 0.5px solid lightgrey; */
+
 }
 
 .wcw{
@@ -142,19 +140,20 @@
     .inbox{
         position: absolute;
         top: 0%;
-        height: 100%;
-        width: 100%;
-        background-color: slateblue;
+        /* left: 0%; */
+        height: 100vh;
+        width: 100vw;
+        /* background-color: slateblue; */
         display: flex;
         justify-content: center;
     }
     .inbox-container{
         margin-top: 0vh;
-        height: 85vh;
+        height: 100vh;
         background-color: white;
-        width: 100%;
+        width: 100vw;
         display: flex;
-        border: 0.5px solid lightgrey;
+        border: 0px solid lightgrey;
     }
     .wcw{
         flex: 0;
@@ -165,7 +164,7 @@
         align-items: center;
     }
     .right-cont{
-        width: 100%;
+        width: 100vw;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -175,6 +174,12 @@
 
     .rightmob-cont{
         display: none;
+    }
+
+    .left-cont{
+        width: 100vw;
+        display: flex;
+        /* background-color: lightpink; */
     }
     
     .arrow-back{
