@@ -111,7 +111,7 @@
 .mi{
     height: 35px;
     width: 575px;
-    /* background-color: white; */
+    background-color: rgb(233, 231, 231);
     border-radius: 20px;
     border: 0.5px solid lightgrey;
     display: flex;
@@ -127,6 +127,7 @@
     height: 25px;
     width: 450px;
     border: none;
+    background-color: rgb(233, 231, 231);
 }
 
 .send-msg{
@@ -152,9 +153,9 @@
     .mi{
         height: 35px;
         width: 95vw;
-        /* background-color: white; */
+        background-color: rgb(233, 231, 231);
         border-radius: 20px;
-        border: 0px solid lightgrey;
+        border: 0.5px solid lightgrey;
         display: flex;
         align-items: center;
         justify-content: space-around;
