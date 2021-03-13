@@ -4,7 +4,7 @@ import {useStateValue} from './UserContext'
 import {actiontype} from './Reducer'
 
 function Login(width) {
-    const initialcount = 1
+    const initialcount = 0
     const [count, setcount] = useState(initialcount)
     const [username, setusername] = useState('')
     const [name, setname] = useState('')
@@ -23,17 +23,16 @@ function Login(width) {
         setusername(username)
     }
 
-    useEffect((i) => {
+    useEffect(() => {
 
         document.title = 'Instagram-Login'
 
        const interval= setInterval(() => {
-            if(i<5){
+            if(count<5){
                 setcount(count => count+1)
-                i++
-                if(i===5){
-                    i=0
-                    setcount(i)
+                
+                if(count===4){
+                    setcount(initialcount)
                 }
             }
 
@@ -42,9 +41,9 @@ function Login(width) {
             clearInterval(interval)
         }
         
-    }, [])
+    }, [count])
     
-    
+    console.log(count)
     return (
         <div className='body'>
             <div className='pics'>

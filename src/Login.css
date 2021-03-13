@@ -180,6 +180,12 @@ hr{
 }
 
 @media (max-width: 400px){
+    /* .body{
+    
+        background-color: whitesmoke;
+        height: 120vh;
+        
+    } */
     .pics{
         display: none;
     }
