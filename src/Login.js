@@ -24,6 +24,12 @@ function Login(width) {
     }
 
     useEffect(() => {
+        console.console.log(('1'));
+        setTimeout(() => {
+            console.console.log(('2'));
+
+        }, 0);
+        console.console.log(('3'));
 
         document.title = 'Instagram-Login'
 
